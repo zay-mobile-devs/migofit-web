@@ -1,0 +1,126 @@
+/* Hoja compartida por las cuatro paginas legales de MigoFit. */
+
+:root {
+  --tinta: #1a1a1a;
+  --tinta-suave: #52525b;
+  --fondo: #ffffff;
+  --fondo-suave: #f7f7f5;
+  --borde: #e4e4e7;
+  --marca: #121212;
+  --acento: #d97706;
+  --aviso: #fff8e1;
+  --aviso-borde: #f0c419;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+header.marca {
+  background: var(--marca);
+  padding: 20px 16px;
+}
+
+header.marca .interior {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+header.marca img { width: 40px; height: 40px; border-radius: 9px; }
+
+header.marca .nombre {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+header.marca nav { margin-left: auto; display: flex; gap: 18px; flex-wrap: wrap; }
+header.marca nav a { color: #d4d4d8; text-decoration: none; font-size: 15px; }
+header.marca nav a:hover { color: #ffffff; text-decoration: underline; }
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 72px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+}
+
+.fecha {
+  color: var(--tinta-suave);
+  font-size: 15px;
+  margin: 0 0 32px;
+}
+
+h2 {
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  margin: 36px 0 10px;
+  padding-top: 20px;
+  border-top: 1px solid var(--borde);
+}
+
+h3 { font-size: 16px; margin: 22px 0 6px; }
+
+p { margin: 0 0 16px; }
+
+a { color: var(--acento); }
+
+.entradilla {
+  background: var(--fondo-suave);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 0 0 8px;
+}
+
+.entradilla p:last-child { margin-bottom: 0; }
+
+.aviso {
+  background: var(--aviso);
+  border: 1px solid var(--aviso-borde);
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 24px 0;
+}
+
+.aviso p:last-child { margin-bottom: 0; }
+
+ol.pasos { padding-left: 22px; margin: 0 0 16px; }
+ol.pasos li { margin-bottom: 10px; }
+
+ul { padding-left: 22px; }
+li { margin-bottom: 8px; }
+
+footer {
+  border-top: 1px solid var(--borde);
+  color: var(--tinta-suave);
+  font-size: 14px;
+  padding: 24px 16px 48px;
+  text-align: center;
+}
+
+footer a { color: var(--tinta-suave); }
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  h1 { font-size: 25px; }
+  main { padding-top: 28px; }
+}
